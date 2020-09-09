@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Создаём русню</title>
+{% endblock %}
+
+{% block titlename %}
+    Создаём русню
+{% endblock %}
+
+{% block textoftitle %}
+    Введи суда своего русню
+    <form method="post">
+        <div>
+            <br><input type="text" class="from-control" name="name" id="name" placeholder="Введите имя"><br>
+        </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" >Введите описание русни</span>
+            </div>
+            <textarea class="form-control" name="text" aria-label="text" id="text" placeholder="Тут"></textarea>
+        </div>
+
+        <button class="btn btn-success" type="submit">Добавить русню</button>
+    </form>
+{% endblock %}

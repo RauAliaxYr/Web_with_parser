@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Бел Чемпик</title>
+{% endblock %}
+
+{% block titlename %}
+    Широкую на широкую
+{% endblock %}
+
+{% block textoftitle %}
+    Продвинутая статистика как на скайспортс
+{% endblock %}
+
+{% block table %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Команда</th>
+            <th scope="col">Колл-во матчей</th>
+            <th scope="col">Победы</th>
+            <th scope="col">Ничьи</th>
+            <th scope="col">Поражения</th>
+            <th scope="col">Очки</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for el in data %}
+            <tr>
+                <th scope="row">{{ el.teamName }}</th>
+                <th scope="row"><p class="font-weight-normal">{{ el.matchs }}</th>
+                <th scope="row"><p class="font-weight-normal">{{ el.victories }}</th>
+                <th scope="row"><p class="font-weight-normal">{{ el.draws }}</th>
+                <th scope="row"><p class="font-weight-normal">{{ el.loses }}</th>
+                <th scope="row">{{ el.points }}</th>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+{% endblock %}
