@@ -1,5 +1,3 @@
 $ cat .gitignore\
-# Untracked files:
-[...]
-*config.py
-*parser_config.py
+config
+parser_config
