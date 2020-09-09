@@ -1,2 +1,3 @@
-Web_with_parser/config.*
-Web_with_parser/parser_config.*
+$ touch .gitignore
+config.py
+parse_config.py
